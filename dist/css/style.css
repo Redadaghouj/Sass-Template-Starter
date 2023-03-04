@@ -2,4 +2,53 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
+.landing {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(/dist/img/bg-masthead.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.landing nav a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.landing nav a:hover {
+  color: #fff;
+}
+.landing .content {
+  width: 680px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.landing .content h1 {
+  font-size: 3.4rem;
+  position: relative;
+}
+.landing .content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #f4623a;
+}
+.landing .content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+.landing .content button {
+  background-color: #f4623a;
+  font-size: 13.5px;
+  padding: 18px 36px;
+  transition: background-color 0.3s;
+}
+.landing .content button:hover {
+  background-color: #cf5331;
+}
+
 /*# sourceMappingURL=style.css.map */

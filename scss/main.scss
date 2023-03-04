@@ -1,3 +1,60 @@
+$main-color: #f4623a;
+$main-color-alt: #cf5331;
 body {
   font-family: "Merriweather Sans", sans-serif;
+}
+
+.landing {
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(/dist/img/bg-masthead.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  nav a {
+    color: rgba(255, 255, 255, 0.7);
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .content {
+    width: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-size: 3.4rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $main-color;
+      }
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 22px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    button {
+      background-color: $main-color;
+      font-size: 13.5px;
+      padding: 18px 36px;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: $main-color-alt;
+      }
+    }
+  }
 }
