@@ -36,7 +36,7 @@ body {
   color: #fff;
 }
 .landing .content {
-  width: 680px;
+  max-width: 680px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,7 +64,7 @@ body {
   background-color: #f4623a;
 }
 .need .content {
-  width: 680px;
+  max-width: 690px;
   margin: 0 auto;
 }
 .need h2 {
