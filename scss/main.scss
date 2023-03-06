@@ -1,9 +1,31 @@
 $main-color: #f4623a;
 $main-color-alt: #cf5331;
+
+%after-line {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+}
+
+%desc-sentence {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Times New Roman", Times, serif;
+}
+
+%btn {
+  font-size: 13.5px;
+  padding: 18px 36px;
+}
+
 body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
+// Landing
 .landing {
   height: 100vh;
   background: linear-gradient(
@@ -21,7 +43,7 @@ body {
       color: #fff;
     }
   }
-
+  // Intro
   .content {
     width: 680px;
     position: absolute;
@@ -32,29 +54,50 @@ body {
       font-size: 3.4rem;
       position: relative;
       &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50px;
-        height: 3px;
+        @extend %after-line;
         background-color: $main-color;
       }
     }
     p {
-      color: rgba(255, 255, 255, 0.7);
+      @extend %desc-sentence;
       font-size: 22px;
-      font-family: "Times New Roman", Times, serif;
     }
     button {
+      @extend %btn;
       background-color: $main-color;
-      font-size: 13.5px;
-      padding: 18px 36px;
       transition: background-color 0.3s;
       &:hover {
         background-color: $main-color-alt;
       }
+    }
+  }
+}
+
+// Need
+.need {
+  background-color: $main-color;
+  .content {
+    width: 680px;
+    margin: 0 auto;
+  }
+  h2 {
+    position: relative;
+    &::after {
+      @extend %after-line;
+      background-color: #fff;
+    }
+  }
+
+  p {
+    @extend %desc-sentence;
+    font-size: 20px;
+  }
+
+  button {
+    @extend %btn;
+    background-color: #fff;
+    &:hover {
+      background-color: #fff;
     }
   }
 }

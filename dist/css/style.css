@@ -1,3 +1,23 @@
+.need h2::after, .landing .content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+}
+
+.need p, .landing .content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.need button, .landing .content button {
+  font-size: 13.5px;
+  padding: 18px 36px;
+}
+
 body {
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -27,28 +47,40 @@ body {
   position: relative;
 }
 .landing .content h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
   background-color: #f4623a;
 }
 .landing .content p {
-  color: rgba(255, 255, 255, 0.7);
   font-size: 22px;
-  font-family: "Times New Roman", Times, serif;
 }
 .landing .content button {
   background-color: #f4623a;
-  font-size: 13.5px;
-  padding: 18px 36px;
   transition: background-color 0.3s;
 }
 .landing .content button:hover {
   background-color: #cf5331;
+}
+
+.need {
+  background-color: #f4623a;
+}
+.need .content {
+  width: 680px;
+  margin: 0 auto;
+}
+.need h2 {
+  position: relative;
+}
+.need h2::after {
+  background-color: #fff;
+}
+.need p {
+  font-size: 20px;
+}
+.need button {
+  background-color: #fff;
+}
+.need button:hover {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
