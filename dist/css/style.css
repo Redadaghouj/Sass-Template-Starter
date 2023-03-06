@@ -27,7 +27,6 @@ body {
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-masthead.jpg);
   background-size: cover;
   background-position: center center;
-  position: relative;
 }
 .landing nav a {
   color: rgba(255, 255, 255, 0.7);
@@ -37,10 +36,8 @@ body {
 }
 .landing .content {
   max-width: 680px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 100px 0;
 }
 .landing .content h1 {
   font-size: 3.4rem;
