@@ -1,0 +1,22 @@
+%after-line {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+}
+
+%desc-sentence {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+%font-family {
+  font-family: "Times New Roman", Times, serif;
+}
+
+%btn {
+  font-size: 13.5px;
+  padding: 18px 36px;
+}

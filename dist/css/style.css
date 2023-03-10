@@ -1,4 +1,4 @@
-.contact .content h2::after, .service h2::after, .need h2::after, .landing .content h1::after {
+.landing .content h1::after, .need h2::after, .service h2::after, .contact .content h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -8,15 +8,15 @@
   height: 4px;
 }
 
-.gallery .row > div .overlay .text p, .need p, .landing .content p {
+.landing .content p, .need p, .gallery .row > div .overlay .text p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-footer, .contact .content form, .contact .content p, .gallery .row > div .overlay .text span, .service .row .box .text, .need p, .landing .content p {
+.landing .content p, .need p, .service .row .box .text, .gallery .row > div .overlay .text span, .contact .content p, .contact .content form, footer {
   font-family: "Times New Roman", Times, serif;
 }
 
-.download button, .need button, .landing .content button {
+.landing .content button, .need button, .download button {
   font-size: 13.5px;
   padding: 18px 36px;
 }
