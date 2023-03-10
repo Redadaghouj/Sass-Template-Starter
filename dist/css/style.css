@@ -52,6 +52,11 @@ body {
 .landing .content h1::after {
   background-color: #f4623a;
 }
+@media (max-width: 767px) {
+  .landing .content h1 {
+    font-size: 2rem;
+  }
+}
 .landing .content p {
   font-size: 22px;
 }
