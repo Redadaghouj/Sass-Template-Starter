@@ -237,6 +237,10 @@ body {
         background-color: $main-color;
         color: #fff;
         font-weight: bold;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: $main-color-alt;
+        }
       }
     }
     .phone-number {
