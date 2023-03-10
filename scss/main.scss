@@ -115,7 +115,6 @@ body {
     }
   }
   .row .box {
-    text-align: center;
     svg {
       color: $main-color;
       margin: 25px 0 20px;
@@ -126,6 +125,55 @@ body {
       font-size: 21px;
       line-height: 1.3;
       color: #6c757d;
+    }
+  }
+}
+
+// Gallery
+.gallery {
+  .row > div {
+    position: relative;
+    cursor: pointer;
+    &:hover .overlay {
+      opacity: 1;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: rgba($main-color, 90%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      .text {
+        position: inherit;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+          font-size: 14px;
+          @extend %desc-sentence;
+          margin-bottom: 0;
+        }
+        span {
+          @extend %font-family;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+
+// Download
+.download {
+  background-color: #212529;
+  button {
+    @extend %btn;
+    background-color: #fff;
+    &:hover {
+      background-color: #fff;
     }
   }
 }
